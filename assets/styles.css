@@ -1,0 +1,86 @@
+/* Main sidebar styling */
+[data-testid="stSidebar"] {
+    background: #f8f9fa;
+    padding: 20px 15px !important;
+}
+
+/* Button base styling */
+[data-testid="stSidebar"] button {
+    width: 100%;
+    display: block;
+    margin: 8px 0;
+    padding: 12px 20px;
+    border-radius: 8px;
+    border: 1px solid #dee2e6;
+    background: white;
+    color: #212529;
+    text-align: left;
+    font-size: 16px;
+    font-weight: 500;
+    transition: all 0.2s;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Hover state - blue */
+[data-testid="stSidebar"] button:hover {
+    background: #e7f1ff;
+    color: #0d6efd;
+    border-color: #cfe2ff;
+    transform: translateX(4px);
+}
+
+/* Active state - solid blue */
+[data-testid="stSidebar"] button:active,
+[data-testid="stSidebar"] button:focus:not(:active) {
+    background: #0d6efd !important;
+    color: white !important;
+    border-color: #0d6efd !important;
+}
+
+/* Active page indicator */
+.nav-active {
+    background: #0d6efd !important;
+    color: white !important;
+    border-color: #0d6efd !important;
+    font-weight: 600;
+}
+
+/* Title styling */
+.sidebar-title {
+    color: #212529;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 35px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #dee2e6;
+}
+
+/* Footer styling */
+.sidebar-footer {
+    margin-top: 30px;
+    font-size: 14px;
+    color: #6c757d;
+    text-align: center;
+}
+
+/* Forecast table styling */
+.forecast-table {
+    height: 200px;
+    overflow-y: scroll;
+}
+
+/* Contact page styling */
+.contact-item {
+    font-size: 20px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+.contact-emoji {
+    font-size: 24px;
+    margin-right: 20px;
+    min-width: 30px;
+    text-align: center;
+}
