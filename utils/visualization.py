@@ -503,7 +503,7 @@ def create_forecast_performance_plot(
         x=[x_min, x_max], y=[avg_dev, avg_dev],
         mode='lines',
         line=dict(color='magenta', dash='dash'),
-        name=f'Avg. Deviation: {units}{avg_dev:.0f} {name}/day',
+        name=f'Avg. Deviation: {units}{avg_dev:,.0f} {name}/day',
         legendrank=4
     ))
 
@@ -512,7 +512,7 @@ def create_forecast_performance_plot(
         x=[x_min, x_max], y=[0, 0],
         mode='lines',
         line=dict(color='orange'),
-        name='Perfect Forecast',
+        name=f'Actual {plot_title} (normalized to zero)',
         legendrank=1
     ))
 
