@@ -42,9 +42,9 @@ def dashboard_page():
         # Row 1: Next Day Orders (Top)
         current_pred_ord = rolling_pred_ord
         st.metric(
-            label="📦 Next Day Orders",
+            label="📦 Next Day Orders Forecast",
             value=f"{current_pred_ord:,.0f}",
-            delta=f"{delta_ord:,.0f} vs today"
+            delta=f"{delta_ord:,.0f} vs Today's Actual Orders"
         )
         
         # Row 2: Order Deviation (Bottom)
@@ -52,8 +52,8 @@ def dashboard_page():
         upper_ord = merged_future_dates_forecast_ord['rolling_forecast']['rolling_ci_upper'].iloc[-1]
         
         st.metric(
-            label="⚠️ Next Day Order Deviation",
-            value=f"{lower_ord:,.0f} - {upper_ord:,.0f}"
+            label="⚠️ Next Day Order Forecast Deviation",
+            value=f"{lower_ord:,.0f} — {upper_ord:,.0f}"
         )
 
     # --- COLUMN 2 ---
@@ -61,9 +61,9 @@ def dashboard_page():
         # Row 1: Next Day Revenue (Top)
         current_pred_rev = rolling_pred_rev
         st.metric(
-            label="💰 Next Day Revenue",
+            label="💰 Next Day Revenue Forecast",
             value=f"${current_pred_rev:,.0f}",
-            delta=f"${delta_rev:,.0f} vs today"
+            delta=f"${delta_rev:,.0f} vs Today's Actual Revenue"
         )
         
         # Row 2: Revenue Deviation (Bottom)
@@ -71,8 +71,8 @@ def dashboard_page():
         upper_rev = merged_future_dates_forecast_rev['rolling_forecast']['rolling_ci_upper'].iloc[-1]
         
         st.metric(
-            label="⚠️ Next Day Revenue Deviation",
-            value=f"${lower_rev:,.0f} - ${upper_rev:,.0f}"
+            label="⚠️ Next Day Revenue Forecast Deviation",
+            value=f"${lower_rev:,.0f} — ${upper_rev:,.0f}"
         )
 
     # Display full forecast plot for orders
