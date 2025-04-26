@@ -26,11 +26,11 @@ def main():
     # Navigation options
     nav_options = [
         "🏠 Home",
+        "🔍 Overview",
         "📊 Dashboard",
         "🎯 Performance",
         "🛒 Order Volume",
         "💰 Revenue Trend",
-        "⚙️ Workflow",
         "📞 Contact"
     ]
 
@@ -62,6 +62,10 @@ def main():
         from custom_pages.home import home_page
         home_page()
 
+    elif st.session_state.current_page == "🔍 Overview":
+        from custom_pages.overview import overview_page
+        overview_page()
+
     elif st.session_state.current_page == "📊 Dashboard":
         from custom_pages.dashboard import dashboard_page
         dashboard_page()
@@ -77,9 +81,7 @@ def main():
     elif st.session_state.current_page == "💰 Revenue Trend":
         from forecasting.revenue_trend import show_revenue_forecast
         show_revenue_forecast()
-    elif st.session_state.current_page == "⚙️ Workflow":
-        from custom_pages.workflow import workflow_page
-        workflow_page()
+
     else:
         from custom_pages.contact import contact_page
         contact_page()
