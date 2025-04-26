@@ -24,7 +24,7 @@ def home_page():
     st.markdown("""
     #### 🎯 The Mission: Predict the Future, Optimize the Present
     
-    The primary goal of this project was to build a state-of-the-art time series forecasting system that accurately predicts key business metrics, enabling Olist to anticipate future trends and support critical business decisions. This mission includes:
+    The primary goal of this project was to build a state-of-the-art time series forecasting system that accurately predicts key business metrics, enabling Olist to anticipate future trends and support critical business decisions. This mission includes:  
     📈 **Accurately forecast order volumes** to optimize inventory and resource management, minimizing stockouts and overstocking.  
     📈 **Forecast revenue trends** to provide a clear financial roadmap, supporting strategic planning and long-term growth.  
 
