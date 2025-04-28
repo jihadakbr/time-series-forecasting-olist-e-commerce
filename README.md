@@ -56,7 +56,9 @@ The dataset was sourced from the Kaggle Brazilian E-Commerce Public Dataset by O
 ## Project Overview
 ![Project Overview Diagram](image_link_here)
 
+
 The project focused on creating a time series forecasting system to predict daily order volumes and revenue trends. The project was deployed using Streamlit and structured as follows:
+```
 time-series-forecasting-olist-e-commerce/
 ├── futuresight_app.py    # Main entry point
 ├── custom_pages/
@@ -77,7 +79,7 @@ time-series-forecasting-olist-e-commerce/
 ├── saved_models/          # Trained model binaries
 ├── saved_csv/             # Preprocessed CSV files
 └── assets/                # Static files (images, styles)
-
+```
 
 Streamlit link: [FutureSight App](https://time-series-forecasting-olist-e-commerce-jihadakbar.streamlit.app/)
 
