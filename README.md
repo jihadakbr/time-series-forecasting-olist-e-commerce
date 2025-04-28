@@ -1,5 +1,5 @@
 # FutureSight: Revolutionizing E-Commerce with Data-Driven Forecasting
-FutureSight is an AI-powered forecasting system designed to tackle unpredictability in e-commerce by predicting order volumes and revenue trends. Built on a Brazilian e-commerce dataset (100,000 orders from 2016–2018), it leverages SARIMA models to deliver actionable insights for inventory optimization and financial planning.
+**FutureSight** is an AI-powered forecasting system designed to tackle unpredictability in e-commerce by predicting order volumes and revenue trends. Built on a Brazilian e-commerce dataset (100,000 orders from 2016–2018), it leverages SARIMA models to deliver actionable insights for inventory optimization and financial planning.
 
 ---
 
