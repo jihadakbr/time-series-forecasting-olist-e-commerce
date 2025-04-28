@@ -43,21 +43,21 @@ Unpredictable order volumes and revenue volatility pose challenges for e-commerc
 
 ## Business Objective
 
-The goal of this project was to build an AI-powered forecasting system to:
-- Accurately predict order volumes to optimize inventory and resource management.
-- Forecast revenue trends to help strategize and plan for long-term growth.
+The primary goal of this project was to build a state-of-the-art time series forecasting system that accurately predicts key business metrics. This mission includes:
+- **Accurately forecast order volumes** to optimize inventory and resource management, minimizing stockouts and overstocking.
+- **Forecast revenue trends** to provide a clear financial roadmap, supporting strategic planning and long-term growth. 
 
-By delivering these capabilities, **FutureSight** aims to enhance operational efficiency and provide strategic financial insights.
+This project, **FutureSight**, delivered an AI-driven forecasting engine that leverages advanced analytics to address these business-critical need.
 
 ## Data Understanding
 
-The dataset was sourced from the Kaggle Brazilian E-Commerce Public Dataset by Olist, covering approximately 100,000 orders from October 2016 to September 2018 across Brazil. It includes various order details, customer and seller information, payment methods, shipping logistics, and customer reviews.
+The dataset was sourced from the [Kaggle – Brazilian E-Commerce Public Dataset by Olist](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce/data), covering approximately 100,000 orders from October 2016 to September 2018 across Brazil. It includes various order details, customer and seller information, payment methods, shipping logistics, and customer reviews.
 
 ## Project Overview
 ![Project Overview Diagram](https://raw.githubusercontent.com/jihadakbr/time-series-forecasting-olist-e-commerce/refs/heads/main/assets/images/workflow-diagram-time-series-forecasting.png)
 
 
-The project focused on creating a time series forecasting system to predict daily order volumes and revenue trends. The project was deployed using Streamlit and structured as follows:
+The project was deployed using Streamlit and structured as follows:
 ```
 time-series-forecasting-olist-e-commerce/
 ├── futuresight_app.py    # Main entry point
@@ -82,8 +82,8 @@ time-series-forecasting-olist-e-commerce/
 ```
 
 Streamlit link: [time-series-forecasting-olist-e-commerce-jihadakbar.streamlit.app](https://time-series-forecasting-olist-e-commerce-jihadakbar.streamlit.app/)
-
-
+<br>
+<br>
 The project files on GitHub are:
 - **Data Science Final Project Presentation.pdf** — PowerPoint presentation in PDF format
 - **Order Volume Forecasting.ipynb** — Preprocessing and training of the time series model for daily orders
