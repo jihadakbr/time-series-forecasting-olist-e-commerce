@@ -82,10 +82,9 @@ time-series-forecasting-olist-e-commerce/
 ```
 
 Streamlit link: [time-series-forecasting-olist-e-commerce-jihadakbar.streamlit.app](https://time-series-forecasting-olist-e-commerce-jihadakbar.streamlit.app/)
-<br>
-<br>
-<br>
-<br>
+
+
+
 The project files on GitHub are:
 - **Data Science Final Project Presentation.pdf** — PowerPoint presentation in PDF format
 - **Order Volume Forecasting.ipynb** — Preprocessing and training of the time series model for daily orders
@@ -94,7 +93,7 @@ The project files on GitHub are:
 ## Data Preprocessing
 
 ### Step 1: Combine Data
-- Merged related CSV files for daily order and revenue forecasting.
+- Merged related CSV files for daily order and revenue forecasting
 
 ### Step 2: Filter Relevant Data
 - Focused on "delivered" orders (order_status = 'delivered') for forecasting.
@@ -119,6 +118,7 @@ The project files on GitHub are:
 
 ### Step 9: Save Clean Data
 - Exported the clean dataset for use in the forecasting model and the dashboard.
+
 
 ## Findings and Results
 ### Best Model: SARIMA
