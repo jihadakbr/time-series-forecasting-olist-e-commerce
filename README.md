@@ -82,16 +82,14 @@ time-series-forecasting-olist-e-commerce/
 ```
 
 Streamlit link: [time-series-forecasting-olist-e-commerce-jihadakbar.streamlit.app](https://time-series-forecasting-olist-e-commerce-jihadakbar.streamlit.app/)
-
-
-
-
-
-
+<br>
+<br>
+<br>
 The project files on GitHub are:
 - **Data Science Final Project Presentation.pdf** — PowerPoint presentation in PDF format
 - **Order Volume Forecasting.ipynb** — Preprocessing and training of the time series model for daily orders
 - **Revenue Trend Forecasting.ipynb** — Preprocessing and training of the time series model for daily revenue
+
 
 ## Data Preprocessing
 
