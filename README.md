@@ -46,7 +46,9 @@
 
 ## Project Background
 
-Unpredictable order volumes and revenue volatility pose challenges for e-commerce businesses. Sudden fluctuations in order demand make it difficult to manage resources effectively, while shifting revenue trends complicate financial planning. **FutureSight** addresses these challenges by providing accurate, data-driven forecasts for order volumes and revenue trends.
+Unpredictable order volumes and revenue volatility pose challenges for e-commerce businesses. Sudden fluctuations in order demand make it difficult to manage resources effectively, while shifting revenue trends complicate financial planning. 
+
+**FutureSight** addresses these challenges by providing accurate, data-driven forecasts for order volumes and revenue trends.
 
 ---
 
