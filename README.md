@@ -192,19 +192,19 @@ The project files on GitHub are:
 - Invest in model improvement for significant cost savings and high ROI.
 
 ## Dashboard
-![Dashboard 1](image_link_here)
+![Dashboard 1](https://raw.githubusercontent.com/jihadakbr/time-series-forecasting-olist-e-commerce/refs/heads/main/assets/images/dashboard_1.png)
 
-![Dashboard 2](image_link_here)
+![Dashboard 2](https://raw.githubusercontent.com/jihadakbr/time-series-forecasting-olist-e-commerce/refs/heads/main/assets/images/dashboard_2.png)
 
-![Dashboard 3](image_link_here)
+![Dashboard 3](https://raw.githubusercontent.com/jihadakbr/time-series-forecasting-olist-e-commerce/refs/heads/main/assets/images/dashboard_3.png)
 
-![Dashboard 4](image_link_here)
+![Dashboard 4](https://raw.githubusercontent.com/jihadakbr/time-series-forecasting-olist-e-commerce/refs/heads/main/assets/images/dashboard_4.png)
 
-![Dashboard 5](image_link_here)
+![Dashboard 5](https://raw.githubusercontent.com/jihadakbr/time-series-forecasting-olist-e-commerce/refs/heads/main/assets/images/dashboard_5.png)
 
-![Dashboard 6](image_link_here)
+![Dashboard 6](https://raw.githubusercontent.com/jihadakbr/time-series-forecasting-olist-e-commerce/refs/heads/main/assets/images/dashboard_6.png)
 
-![Dashboard 7](image_link_here)
+![Dashboard 7](https://raw.githubusercontent.com/jihadakbr/time-series-forecasting-olist-e-commerce/refs/heads/main/assets/images/dashboard_7.png)
 
 ## License
 
