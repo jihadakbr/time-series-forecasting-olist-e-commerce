@@ -123,7 +123,9 @@ The project files on GitHub are:
 - The SARIMA model was identified as the most effective for this dataset.
 - The model diagnostics showed better performance compared to Prophet, although Prophet's residuals could be improved using SARIMA; however, it would be more difficult to maintain for future use.
 
-![Model Diagnostics](image_link_here)
+![30-Day Order Volume Forecast Using a 1-Day Rolling Window](https://raw.githubusercontent.com/jihadakbr/time-series-forecasting-olist-e-commerce/refs/heads/main/assets/images/30-Day%20Order%20Volume%20Forecast%20using%20a%201-Day%20Rolling%20Window.png)
+
+![30-Day Revenue Forecast Using a 1-Day Rolling Window](https://raw.githubusercontent.com/jihadakbr/time-series-forecasting-olist-e-commerce/refs/heads/main/assets/images/30-Day%20Revenue%20Forecast%20using%20a%201-Day%20Rolling%20Window.png)
 
 ### Insights:
 - Actual and predicted daily orders and revenue closely aligned, with a notable peak during Black Friday 2017.
@@ -131,20 +133,20 @@ The project files on GitHub are:
 - The prediction intervals for orders and revenue had widths of 126 orders and R$26,000, respectively.
 - The prediction coverage was 93% for orders and 97% for revenue, indicating high accuracy.
 - Trend prediction accuracy was 70% for daily orders and 67% for daily revenue.
-
-![Orders vs. Predictions](image_link_here)
-
-### Seasonal Patterns:
 - **Weekly Seasonality:** Orders peaked on weekends, but deliveries occurred during weekdays.
 - **Yearly Seasonality:** Black Friday 2017 caused a sharp spike in orders and revenue, followed by a noticeable decline.
 
-![Yearly Patterns](image_link_here)
+![30-Day Order Volume Forecast Comparison](https://raw.githubusercontent.com/jihadakbr/time-series-forecasting-olist-e-commerce/refs/heads/main/assets/images/30-Day%20Order%20Volume%20Forecast%20Comparison.png)
+
+![30-Day Revenue Forecast Comparison](https://raw.githubusercontent.com/jihadakbr/time-series-forecasting-olist-e-commerce/refs/heads/main/assets/images/30-Day%20Revenue%20Forecast%20Comparison.png)
+
+![forecast vs actual daily orders](https://raw.githubusercontent.com/jihadakbr/time-series-forecasting-olist-e-commerce/refs/heads/main/assets/images/forecast%20vs%20actual%20for%20daily%20orders.png)
+
+![forecast vs actual daily revenue](https://raw.githubusercontent.com/jihadakbr/time-series-forecasting-olist-e-commerce/refs/heads/main/assets/images/forecast%20vs%20actual%20for%20daily%20revenue.png)
 
 ### Forecasting Models:
 - **Baseline Forecast:** Provides a broad, less precise prediction over 30 days.
 - **1-Day Rolling Window Forecast:** Uses actual data from today to predict tomorrow's values, offering greater accuracy.
-
-![Forecasting Accuracy](image_link_here)
 
 ## Business Impact Analysis
 
