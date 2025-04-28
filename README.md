@@ -1,4 +1,5 @@
 # FutureSight: Revolutionizing E-Commerce with Data-Driven Forecasting
+FutureSight is an AI-powered forecasting system designed to tackle unpredictability in e-commerce by predicting order volumes and revenue trends. Built on a Brazilian e-commerce dataset (100,000 orders from 2016–2018), it leverages SARIMA models to deliver actionable insights for inventory optimization and financial planning.
 
 ---
 
@@ -140,30 +141,41 @@ The project files on GitHub are:
 - The SARIMA model was identified as the most effective for this dataset.
 - The model diagnostics showed better performance compared to Prophet, although Prophet's residuals could be improved using SARIMA; however, it would be more difficult to maintain for future use.
 
+---
+
 ![30-Day Order Volume Forecast Using a 1-Day Rolling Window](https://raw.githubusercontent.com/jihadakbr/time-series-forecasting-olist-e-commerce/refs/heads/main/assets/images/30-Day%20Order%20Volume%20Forecast%20using%20a%201-Day%20Rolling%20Window.png)
 
 ![30-Day Revenue Forecast Using a 1-Day Rolling Window](https://raw.githubusercontent.com/jihadakbr/time-series-forecasting-olist-e-commerce/refs/heads/main/assets/images/30-Day%20Revenue%20Forecast%20using%20a%201-Day%20Rolling%20Window.png)
 
 ### Insights:
-- Actual and predicted daily orders and revenue closely aligned, with a notable peak during Black Friday 2017.
-- The average RMSE for daily orders was 30, and for daily revenue, R$5,500.
-- The prediction intervals for orders and revenue had widths of 126 orders and R$26,000, respectively.
-- The prediction coverage was 93% for orders and 97% for revenue, indicating high accuracy.
-- Trend prediction accuracy was 70% for daily orders and 67% for daily revenue.
-- **Weekly Seasonality:** Orders peaked on weekends, but deliveries occurred during weekdays.
-- **Yearly Seasonality:** Black Friday 2017 caused a sharp spike in orders and revenue, followed by a noticeable decline.
+- The actual and predicted daily orders and revenue exhibit a **similar pattern throughout the year**, with a notable peak around the **Black Friday event (2017-11-24)**.
+- **The average prediction error (RMSE)** is **30** for daily orders and **R$5,500** for daily revenue.
+- **The prediction interval width (PIW)** ranges approximately **126 orders** (e.g., 100–226) and **R$26,000** for daily revenue (e.g., R$10,000–36,000).
+- **The prediction coverage (PIC)** is **93%** for orders and **97%** for revenue, indicating that 93% of actual daily orders and 97% of actual daily revenue fall within their respective predicted ranges.
+- **70%** of **trend predictions** or MDA (up/down compared to the previous day) are correct for daily orders, while **67%** of trend predictions are correct for daily revenue.
+- **The seasonal ups and downs** in this dataset were caused by two main patterns: weekly seasonality and yearly seasonality.
+- **Weekly seasonality** happens because customer behavior changes depending on the day of the week. For example, customers often place orders on Saturdays or Sundays, but since the dataset tracks the "delivered" status, these orders are recorded as deliveries during the weekdays.
+- **Yearly seasonality** happens because of major shopping events throughout the year. For instance, the Black Friday event in late November causes a sharp increase in both orders and revenue, followed by a noticeable drop afterward.
+
+---
 
 ![30-Day Order Volume Forecast Comparison](https://raw.githubusercontent.com/jihadakbr/time-series-forecasting-olist-e-commerce/refs/heads/main/assets/images/30-Day%20Order%20Volume%20Forecast%20Comparison.png)
 
 ![30-Day Revenue Forecast Comparison](https://raw.githubusercontent.com/jihadakbr/time-series-forecasting-olist-e-commerce/refs/heads/main/assets/images/30-Day%20Revenue%20Forecast%20Comparison.png)
 
+### Insights:
+- The baseline forecast provides a rough prediction for orders or revenue over the next 30 days, giving a broad overview of future trends. In contrast, the 1-day rolling window forecast leverages today’s actual data to predict tomorrow’s values, making it significantly more accurate.
+- As a result, while the baseline forecast is less precise than the 1-day rolling window forecast, it serves as a useful tool for initial preparation and planning
+
+---
+
 ![forecast vs actual daily orders](https://raw.githubusercontent.com/jihadakbr/time-series-forecasting-olist-e-commerce/refs/heads/main/assets/images/forecast%20vs%20actual%20for%20daily%20orders.png)
 
 ![forecast vs actual daily revenue](https://raw.githubusercontent.com/jihadakbr/time-series-forecasting-olist-e-commerce/refs/heads/main/assets/images/forecast%20vs%20actual%20for%20daily%20revenue.png)
 
-### Forecasting Models:
-- **Baseline Forecast:** Provides a broad, less precise prediction over 30 days.
-- **1-Day Rolling Window Forecast:** Uses actual data from today to predict tomorrow's values, offering greater accuracy.
+### Insights:
+- This monitoring dashboard helps identify whether the predictions are too high or too low compared to the actual data (normalized to zero).
+- The gray line represents the actual number of orders or revenue, serving as a benchmark for comparison.
 
 ---
 
@@ -173,13 +185,23 @@ The project files on GitHub are:
 - **Average Daily Orders:** 255
 - **Average Deviation:** 30 orders (11.9% of average)
 
+#### Insights:
+- The forecasting model deviates on average by 30 orders per day, which is roughly 12% of the daily volume.
+- This level of deviation indicates moderate accuracy but with room for improvement to
+reduce costs linked to forecast errors.
+
 #### Error Cost Analysis (Local Currency R$) [Using hypothetical numbers]
 - **Under-prediction Cost:** R$50 per order (lost profit)
 - **Over-prediction Cost:** R$30 per order (excess inventory)
 - **Daily Average Cost:** R$958
 - **Monthly Error Cost Impact:** R$28,728
 
-#### ROI Calculation [Using hypothetical numbers]
+#### Insights:
+- The forecasting errors translate into a significant daily cost of nearly R$1,000, accumulating to nearly R$29,000 monthly.
+- Since under-prediction costs are higher, errors causing stockouts (lost sales) are more
+expensive than excess inventory costs.
+
+#### Return on Investment (ROI) [Using hypothetical numbers]
 - **Investment cost:** R$40,000 (one-time)
 - **Ongoing monthly cost:** R$1,500
 - **Projected monthly savings:** R$7,182
@@ -187,9 +209,16 @@ The project files on GitHub are:
 - **ROI after 1 year:** 170.5%
 - **Breakeven point:** ~5.6 months
 
+#### Insights:
+- Investing R$40k in improving the forecast model with an ongoing cost of R$1,500/month is highly financially justified.
+- Achieving a 25% reduction in forecasting errors would generate substantial savings and lead to a very attractive ROI (>170%) within just over 5 months. This is a strong business case for funding forecasting improvements.
+
 ### Daily Revenue
 - **Average Daily Revenue:** R$40,787
 - **Average Deviation:** R$5,458 (13.4% of average)
+
+#### Insights:
+- The forecast error on revenue is about 13.4% of the daily revenue, meaning the model deviates on average by R$5,458 daily. This is a substantial variation given the revenue magnitude and directly impacts profitability and costs.
 
 #### Error Cost Analysis (Local Currency R$) [Using hypothetical numbers]
 - **Under-prediction Cost:** R$50 per R$100 error (lost profit)
@@ -197,7 +226,10 @@ The project files on GitHub are:
 - **Daily Average Cost:** R$1,680
 - **Monthly Error Cost Impact:** R$50,415
 
-#### ROI Calculation [Using hypothetical numbers]
+#### Insights:
+- The costs associated with forecasting errors (lost profit + inventory holding) sum to over R$1,600 daily, leading to a monthly loss exceeding R$50,000. Under-prediction carries a higher penalty, reflecting lost sales/profit impact.
+
+#### Return on Investment (ROI) [Using hypothetical numbers]
 - **One-Time Investment:** R$75,000
 - **Ongoing Monthly Cost:** R$3,000
 - **Projected Monthly Savings:** R$12,604
@@ -205,13 +237,18 @@ The project files on GitHub are:
 - **ROI After 1 Year:** 153.7%
 - **Breakeven Period:** 6.0 months
 
+#### Insights:
+- Investing R$75k in improving the revenue forecast model—with a higher ongoing
+maintenance cost—is justified financially.
+- Achieving a 25% error reduction delivers substantial monthly savings and a strong ROI of over 150% within a year, breaking even in just 6 months.
+
 ---
 
 ## Recommendations
-- Use daily order forecasts to adjust supply and inventory planning.
-- Adjust revenue strategies based on forecast updates to align with actual sales.
-- Monitor forecast accuracy regularly to adjust plans and minimize errors.
-- Invest in model improvement for significant cost savings and high ROI.
+- Use updated daily order forecasts to **adjust supply and inventory plans**, ensuring products are available without overstocking or understocking.
+- **Base inventory and revenue strategies** on daily updates to forecasts, ensuring alignment with actual sales and preventing overproduction or lost opportunities.
+- **Regularly monitor forecast accuracy** on the dashboard, adjusting orders and inventory levels when predictions are off to minimize excess or shortage costs.
+- **Investing in model improvement** is financially advantageous with strong ROI and quick breakeven.
 
 ---
 
