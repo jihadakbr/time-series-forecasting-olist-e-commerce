@@ -2,7 +2,7 @@
 **FutureSight** is an AI-powered forecasting system designed to tackle unpredictability in e-commerce by predicting order volumes and revenue trends. Built on a Brazilian e-commerce dataset (100,000 orders from 2016–2018), it leverages SARIMA models to deliver actionable insights for inventory optimization and financial planning.
 
 To quickly access the Streamlit interactive dashboard, use this link: 
-[time-series-forecasting-olist-e-commerce-jihadakbar.streamlit.app](https://time-series-forecasting-olist-e-commerce-jihadakbar.streamlit.app/)
+- [time-series-forecasting-olist-e-commerce-jihadakbar.streamlit.app](https://time-series-forecasting-olist-e-commerce-jihadakbar.streamlit.app/)
 
 ---
 
