@@ -83,6 +83,7 @@ time-series-forecasting-olist-e-commerce/
 
 Streamlit link: [time-series-forecasting-olist-e-commerce-jihadakbar.streamlit.app](https://time-series-forecasting-olist-e-commerce-jihadakbar.streamlit.app/)
 
+
 The project files on GitHub are:
 - **Data Science Final Project Presentation.pdf** — PowerPoint presentation in PDF format
 - **Order Volume Forecasting.ipynb** — Preprocessing and training of the time series model for daily orders
@@ -153,13 +154,13 @@ The project files on GitHub are:
 - **Average Daily Orders:** 255
 - **Average Deviation:** 30 orders (11.9% of average)
 
-### Error Cost Analysis (Local Currency R$)
+#### Error Cost Analysis (Local Currency R$) [Using hypothetical numbers]
 - **Under-prediction Cost:** R$50 per order (lost profit)
 - **Over-prediction Cost:** R$30 per order (excess inventory)
 - **Daily Average Cost:** R$958
 - **Monthly Error Cost Impact:** R$28,728
 
-### ROI Calculation
+#### ROI Calculation [Using hypothetical numbers]
 - **Investment cost:** R$40,000 (one-time)
 - **Ongoing monthly cost:** R$1,500
 - **Projected monthly savings:** R$7,182
@@ -171,13 +172,13 @@ The project files on GitHub are:
 - **Average Daily Revenue:** R$40,787
 - **Average Deviation:** R$5,458 (13.4% of average)
 
-### Error Cost Analysis (Local Currency R$)
+#### Error Cost Analysis (Local Currency R$) [Using hypothetical numbers]
 - **Under-prediction Cost:** R$50 per R$100 error (lost profit)
 - **Over-prediction Cost:** R$30 per R$100 error (excess inventory)
 - **Daily Average Cost:** R$1,680
 - **Monthly Error Cost Impact:** R$50,415
 
-### ROI Calculation
+#### ROI Calculation [Using hypothetical numbers]
 - **One-Time Investment:** R$75,000
 - **Ongoing Monthly Cost:** R$3,000
 - **Projected Monthly Savings:** R$12,604
