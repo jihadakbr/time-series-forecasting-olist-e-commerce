@@ -54,7 +54,7 @@ By delivering these capabilities, **FutureSight** aims to enhance operational ef
 The dataset was sourced from the Kaggle Brazilian E-Commerce Public Dataset by Olist, covering approximately 100,000 orders from October 2016 to September 2018 across Brazil. It includes various order details, customer and seller information, payment methods, shipping logistics, and customer reviews.
 
 ## Project Overview
-![Project Overview Diagram](image_link_here)
+![Project Overview Diagram](https://raw.githubusercontent.com/jihadakbr/time-series-forecasting-olist-e-commerce/refs/heads/main/assets/images/workflow-diagram-time-series-forecasting.png)
 
 
 The project focused on creating a time series forecasting system to predict daily order volumes and revenue trends. The project was deployed using Streamlit and structured as follows:
@@ -63,7 +63,7 @@ time-series-forecasting-olist-e-commerce/
 ├── futuresight_app.py    # Main entry point
 ├── custom_pages/
 │   ├── home.py       # Landing page with radio navigation + Project background explanation
-│   ├── dashboard.py  # Main forecasting dashboard: displaying the graph result for order volume forecasting and revenue trend forecasting, including KPIs.
+│   ├── dashboard.py  # Main forecasting dashboard
 │   ├── contact.py    # Contact information
 │   ├── overview.py   # Project overview (diagram)
 │   └── performance.py # Time series model performance
@@ -81,7 +81,12 @@ time-series-forecasting-olist-e-commerce/
 └── assets/                # Static files (images, styles)
 ```
 
-Streamlit link: [FutureSight App](https://time-series-forecasting-olist-e-commerce-jihadakbar.streamlit.app/)
+Streamlit link: [time-series-forecasting-olist-e-commerce-jihadakbar.streamlit.app](https://time-series-forecasting-olist-e-commerce-jihadakbar.streamlit.app/)
+
+The project files on GitHub are:
+- **Data Science Final Project Presentation.pdf** — PowerPoint presentation in PDF format
+- **Order Volume Forecasting.ipynb** — Preprocessing and training of the time series model for daily orders
+- **Revenue Trend Forecasting.ipynb** — Preprocessing and training of the time series model for daily revenue
 
 ## Data Preprocessing
 
@@ -113,10 +118,11 @@ Streamlit link: [FutureSight App](https://time-series-forecasting-olist-e-commer
 - Exported the clean dataset for use in the forecasting model and the dashboard.
 
 ## Findings and Results
+![Model Diagnostics](image_link_here)
 
 ### Best Model: SARIMA
 - The SARIMA model was identified as the most effective for this dataset.
-- The model diagnostics showed better performance compared to Prophet, though Prophet's residuals could be improved using SARIMA.
+- The model diagnostics showed better performance compared to Prophet, although Prophet's residuals could be improved using SARIMA; however, it would be more difficult to maintain for future use.
 
 ![Model Diagnostics](image_link_here)
 
@@ -172,10 +178,10 @@ Streamlit link: [FutureSight App](https://time-series-forecasting-olist-e-commer
 - **Monthly Error Cost Impact:** R$50,415
 
 ### ROI Calculation
-- **One-Time Investment:** R$75,000 (~$12,909 USD)
-- **Ongoing Monthly Cost:** R$3,000 (~$516 USD)
-- **Projected Monthly Savings:** R$12,604 (~$2,169 USD)
-- **Annual Net Gain:** R$115,245 (~$19,836 USD)
+- **One-Time Investment:** R$75,000
+- **Ongoing Monthly Cost:** R$3,000
+- **Projected Monthly Savings:** R$12,604
+- **Annual Net Gain:** R$115,245
 - **ROI After 1 Year:** 153.7%
 - **Breakeven Period:** 6.0 months
 
@@ -186,7 +192,19 @@ Streamlit link: [FutureSight App](https://time-series-forecasting-olist-e-commer
 - Invest in model improvement for significant cost savings and high ROI.
 
 ## Dashboard
-![Dashboard](image_link_here)
+![Dashboard 1](image_link_here)
+
+![Dashboard 2](image_link_here)
+
+![Dashboard 3](image_link_here)
+
+![Dashboard 4](image_link_here)
+
+![Dashboard 5](image_link_here)
+
+![Dashboard 6](image_link_here)
+
+![Dashboard 7](image_link_here)
 
 ## License
 
@@ -201,4 +219,3 @@ For questions or collaborations, feel free to reach out:
 - Email: [jihadakbr@gmail.com](mailto:jihadakbr@gmail.com)
 - LinkedIn: [linkedin.com/in/jihadakbr](https://www.linkedin.com/in/jihadakbr)
 - Portfolio: [jihadakbr.github.io](https://jihadakbr.github.io/)
-
