@@ -1,5 +1,7 @@
 # FutureSight: Revolutionizing E-Commerce with Data-Driven Forecasting
 
+---
+
 ## Table of Contents
 - [Dataset Overview](#dataset-overview)
 - [Project Background](#project-background)
@@ -13,6 +15,8 @@
 - [Dashboard](#dashboard)
 - [License](#license)
 - [Contact](#contact)
+
+---
 
 ## Dataset Overview
 
@@ -37,9 +41,13 @@
 | 4   | payment_installments | Number of installments the payment was divided into (e.g., `1` for lump sum). |
 | 5   | payment_value | Total value of the payment for the order installment. |
 
+---
+
 ## Project Background
 
 Unpredictable order volumes and revenue volatility pose challenges for e-commerce businesses. Sudden fluctuations in order demand make it difficult to manage resources effectively, while shifting revenue trends complicate financial planning. **FutureSight** addresses these challenges by providing accurate, data-driven forecasts for order volumes and revenue trends.
+
+---
 
 ## Business Objective
 
@@ -49,9 +57,13 @@ The primary goal of this project was to build a state-of-the-art time series for
 
 This project, **FutureSight**, delivered an AI-driven forecasting engine that leverages advanced analytics to address these business-critical need.
 
+---
+
 ## Data Understanding
 
 The dataset was sourced from the [Kaggle – Brazilian E-Commerce Public Dataset by Olist](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce/data), covering approximately 100,000 orders from October 2016 to September 2018 across Brazil. It includes various order details, customer and seller information, payment methods, shipping logistics, and customer reviews.
+
+---
 
 ## Project Overview
 ![Project Overview Diagram](https://raw.githubusercontent.com/jihadakbr/time-series-forecasting-olist-e-commerce/refs/heads/main/assets/images/workflow-diagram-time-series-forecasting.png)
@@ -90,6 +102,7 @@ The project files on GitHub are:
 - **Order Volume Forecasting.ipynb** — Preprocessing and training of the time series model for daily orders
 - **Revenue Trend Forecasting.ipynb** — Preprocessing and training of the time series model for daily revenue
 
+---
 
 ## Data Preprocessing
 
@@ -120,6 +133,7 @@ The project files on GitHub are:
 ### Step 9: Save Clean Data
 - Exported the clean dataset for use in the forecasting model and the dashboard.
 
+---
 
 ## Findings and Results
 ### Best Model: SARIMA
@@ -150,6 +164,8 @@ The project files on GitHub are:
 ### Forecasting Models:
 - **Baseline Forecast:** Provides a broad, less precise prediction over 30 days.
 - **1-Day Rolling Window Forecast:** Uses actual data from today to predict tomorrow's values, offering greater accuracy.
+
+---
 
 ## Business Impact Analysis
 
@@ -189,11 +205,15 @@ The project files on GitHub are:
 - **ROI After 1 Year:** 153.7%
 - **Breakeven Period:** 6.0 months
 
+---
+
 ## Recommendations
 - Use daily order forecasts to adjust supply and inventory planning.
 - Adjust revenue strategies based on forecast updates to align with actual sales.
 - Monitor forecast accuracy regularly to adjust plans and minimize errors.
 - Invest in model improvement for significant cost savings and high ROI.
+
+---
 
 ## Dashboard
 ![Dashboard 1](https://raw.githubusercontent.com/jihadakbr/time-series-forecasting-olist-e-commerce/refs/heads/main/assets/images/dashboard_1.png)
@@ -209,6 +229,8 @@ The project files on GitHub are:
 ![Dashboard 6](https://raw.githubusercontent.com/jihadakbr/time-series-forecasting-olist-e-commerce/refs/heads/main/assets/images/dashboard_6.png)
 
 ![Dashboard 7](https://raw.githubusercontent.com/jihadakbr/time-series-forecasting-olist-e-commerce/refs/heads/main/assets/images/dashboard_7.png)
+
+---
 
 ## License
 
