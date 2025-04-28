@@ -265,7 +265,11 @@ maintenance cost—is justified financially.
 
 ![Dashboard 5](https://raw.githubusercontent.com/jihadakbr/time-series-forecasting-olist-e-commerce/refs/heads/main/assets/images/dashboard_5.png)
 
+![Dashboard 8](https://raw.githubusercontent.com/jihadakbr/time-series-forecasting-olist-e-commerce/refs/heads/main/assets/images/dashboard_8.png)
+
 ![Dashboard 6](https://raw.githubusercontent.com/jihadakbr/time-series-forecasting-olist-e-commerce/refs/heads/main/assets/images/dashboard_6.png)
+
+![Dashboard 9](https://raw.githubusercontent.com/jihadakbr/time-series-forecasting-olist-e-commerce/refs/heads/main/assets/images/dashboard_9.png)
 
 ![Dashboard 7](https://raw.githubusercontent.com/jihadakbr/time-series-forecasting-olist-e-commerce/refs/heads/main/assets/images/dashboard_7.png)
 
