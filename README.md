@@ -119,8 +119,6 @@ The project files on GitHub are:
 - Exported the clean dataset for use in the forecasting model and the dashboard.
 
 ## Findings and Results
-![Model Diagnostics](image_link_here)
-
 ### Best Model: SARIMA
 - The SARIMA model was identified as the most effective for this dataset.
 - The model diagnostics showed better performance compared to Prophet, although Prophet's residuals could be improved using SARIMA; however, it would be more difficult to maintain for future use.
