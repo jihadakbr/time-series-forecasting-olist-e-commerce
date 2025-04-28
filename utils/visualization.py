@@ -458,16 +458,16 @@ def create_forecast_performance_plot(
             if not merged[(merged['year'] == year) & (merged['month'] == month)].empty:
                 month_year_pairs.append((year, month))
     
-    # Create slider for month selection
+    # Create dropdown for month selection
     if month_year_pairs:
         # Format options for display
         options = [f"{month_name[month]} {year}" for year, month in month_year_pairs]
         
-        # Create select slider
-        selected_month_str = st.select_slider(
+        # Create select box
+        selected_month_str = st.selectbox(
             "Select Month:",
             options=options,
-            value=options[-1],  # Default to most recent month
+            index=len(options)-1,  # Default to most recent month
             key=unique_key_slider
         )
         
