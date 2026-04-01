@@ -72,7 +72,7 @@ def dashboard_page():
         
         st.metric(
             label="⚠️ Next Day Revenue Forecast Deviation",
-            value=f"${lower_rev:,.0f} — ${upper_rev:,.0f}"
+            value=f"{lower_rev:,.0f} — {upper_rev:,.0f}"
         )
 
     # Display full forecast plot for orders
