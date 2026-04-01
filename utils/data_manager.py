@@ -346,9 +346,9 @@ def generate_rolling_forecast(model, actual_data, regressor_features, transforme
         forecast_pred_mean = forecast.predicted_mean.iloc[0]
         preds_transformed.append(forecast_pred_mean)
         ci = forecast.conf_int().iloc[0]
-        ci_lower_transformed.append(ci[0])
-        ci_upper_transformed.append(ci[1])
-        
+        ci_lower_transformed.append(ci.iloc[0])
+        ci_upper_transformed.append(ci.iloc[1])
+
         new_endog = actual_data['y_transformed'].iloc[i]
         current_model = current_model.append(
             [new_endog], 
@@ -551,8 +551,8 @@ def generate_rolling_future_dates_forecast(full_model, full_data_future_dates, f
         preds_transformed.append(forecast_pred_mean)
 
         ci = forecast.conf_int().iloc[0]
-        ci_lower_transformed.append(ci[0])
-        ci_upper_transformed.append(ci[1])
+        ci_lower_transformed.append(ci.iloc[0])
+        ci_upper_transformed.append(ci.iloc[1])
 
         new_endog = latest_data['y_transformed'].iloc[i]
         current_model = current_model.append(
