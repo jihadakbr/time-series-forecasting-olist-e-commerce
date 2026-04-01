@@ -155,7 +155,7 @@ def forecast_table_style(
                 if v != '' else ''
             )
         })
-        .applymap(lambda x: color_alert(value_col, x)['style'] 
+        .map(lambda x: color_alert(value_col, x)['style'] 
                 if isinstance(color_alert(value_col, x), dict) and x != '' 
                 else '', 
                 subset=[f'Expected {value_name} ({table_name}){col_name}'])
@@ -395,7 +395,7 @@ def display_recommendations(metric_name="Order Volume", value_col="orders", metr
     # Apply formatting to Forecast columns
     styled_table = (
         df_action.style
-        .applymap(lambda x: color_alert(value_col, x), subset=['Forecast'])
+        .map(lambda x: color_alert(value_col, x), subset=['Forecast'])
     )
 
     # Display the table

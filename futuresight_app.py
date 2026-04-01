@@ -45,7 +45,7 @@ def main():
         )
         
         for option in nav_options:
-            if st.button(option, key=option):
+            if st.button(option, key=option, use_container_width=True):
                 st.session_state.current_page = option
                 st.rerun()
         
